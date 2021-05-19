@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* ===== HEADER ===== */
+header {
+  position: fixed;
+  z-index: 2;
+  padding: 20px;
+  background-color: #6f8099;
+}
+
+#icon-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+header h1 {
+  font-family: 'Great Vibes';
+  margin: 20px auto -5px 5px;
+  font-size: 2.2em;
+  font-weight: bold;
+  color:  #434B54;
+  cursor: default;
+}
+
+/* ===== MAIN ===== */
+main {
+  position: relative;
+  top: 120px;
+  font-family: 'Barlow', sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ===== VIDEO ===== */
+#about h2 {
+  font-weight: 600;
+  margin: 20px;
+}
+
+#about p {
+  margin: 40px auto;
+}
+
+video {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+/* ===== EMAIL ===== */
+#newsletter {
+  margin: 40px auto;
+  padding: 10px;
+}
+
+#newsletter p {
+  margin-top: 10px;
+}
+
+#newsletter input[type="email"] {
+  margin-top: 20px;
+  height: 40px;
+}
+
+#submit {
+  margin-top: 10px;
+  height: 40px;
+  background-color: #6f8099aa;
+}
+
+/* ===== PRODUCTS ===== */
+#products {
+  margin: 40px auto;
+}
+
+#cards-container .row .col-sm-4 {
+  margin-bottom: 40px;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #6f8099;
+  font-family: 'Barlow', sans-serif;
+}
+
+footer a img {
+  width: 30px;
+  cursor: pointer;
+  opacity: 60%;
+}
+
+footer a img:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s;
+  opacity: 100%;
+}
+
+/* ===== RESPONSIVITY ===== */
+@media (max-width: 500px) { 
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: auto;
+    text-align: center;
+  }
+  
+  main {
+    padding-top: 100px; 
+  }
+}

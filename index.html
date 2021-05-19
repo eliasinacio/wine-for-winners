@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://img.icons8.com/cotton/64/000000/wine.png" type="image/x-icon">
+  <title>Wine for Winners - Quality for all costumers</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header" class="container-fluid">
+    <div id="icon-container" class="container">
+      <img id="header-img" src="https://img.icons8.com/cotton/64/000000/wine.png"/><h1>Wine for Winners</h1> 
+    <div>
+      
+    <nav id="nav-bar" class="navbar navbar-expand navbar-light">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#video">Newsletter</a>
+        <a class="nav-link" href="#newsletter">Products</a>
+        <!-- A linkagem não está correta, mas para a visualização é melhor assim -->
+      </div>
+    </nav>
+  </header>
+    
+  <main>
+    <section id="about" class="container">
+      <h2>About us</h2>
+      <p>Watch this short video about our best products on the wine market. <br/>
+      We are always committed to bringing the best quality to our customers so that they feel truly winners.</p>
+      <video id="video" controls>
+        <source src="https://storage.coverr.co/videos/00AApjAzSgtTN7Q5qgK401WgwvDfhlSW1Q?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjIxMzYxNzA1fQ.1Zv8QckEZW6MIGeafehbCNIkKjP5-evsNWyj3iEf-r4" type="video/mp4">
+    </section>
+      <hr/>
+    <section id="newsletter" class="container-sm">
+      <h2>Newsletter</h2>
+      <p>Place your e-mail to receive news about us.</p>
+      
+      <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" name="email" class="mb-1" type="email" required placeholder="Enter your e-mail adress"><br/>
+        <input id="submit" type="submit" value="Make me informed"></input>
+      </form>
+    </section>
+      <hr/>
+    <section id="products" class="container">
+      <h2>Products</h2>
+      <p>Some of our best products.</p>
+      
+      <div id="cards-container" class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1614208406223-5b78888e8b4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2127&q=80">
+              <div class="card-body">
+                <h4 class="card-title">Pure Galaxy</h4>
+                <p>The most pure and refined wine.</p>
+                <button class="btn btn-dark">Show me</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1616186793090-b49b8ca005e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
+              <div class="card-body">
+                <h4 class="card-title">Pure Galaxy</h4>
+                <p>The most pure and refined wine.</p>
+                <button class="btn btn-dark">Show me</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2158&q=80">
+              <div class="card-body">
+                <h4 class="card-title">Black Mirror</h4>
+                <p>Strong and with a long lasting flavor.</p>
+                <button class="btn btn-dark">Show me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+  </main>
+      
+  <footer id="footer" class="footer text-center">
+    <p class="text-white"> Powered by me in 2021 :) </p> 
+      <div>
+        <a id="github" href="https://www.github.com/eliasinacio" target="_blank"><img src="https://img.icons8.com/material-outlined/48/000000/github.png"/></a>
+        <a id="instagram" href="https://www.instagram.com/eu_liaaas" target="_blank"><img src="https://img.icons8.com/material/48/000000/instagram-new--v1.png"/></a>
+        <a  id="twitter" href="https://www.twitter.com/eliasinacio_1" target="_blank"><img src="https://img.icons8.com/android/48/000000/twitter.png"/></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/elias-inacio0/" target="_blank"><img src="https://img.icons8.com/fluent-systems-filled/48/000000/linkedin.png"/></a>
+      </div>
+  </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
