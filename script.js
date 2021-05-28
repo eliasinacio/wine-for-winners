@@ -30,8 +30,8 @@ const Wines = {
       grapes: ["Pinot Meunier", "Chardonnay"],
       harvest: "2014",
 
-      alcohol: 20,
-      price: 87.74
+      alcohol: 23,
+      price: 97.74
     }
   ]
 }
