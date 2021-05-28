@@ -56,7 +56,8 @@ const Modal = {
     wineHarvest.innerText = `${Wines.all[wine].harvest}`
     alcoholValue.innerText = `${Wines.all[wine].alcohol}`
     alcoholField.style.width = `${Wines.all[wine].alcohol/10*15+'px'}`
-    price.innerText = `${Wines.all[wine].price.toFixed(2)
+    price.innerText = `${Wines.all[wine].price
+                                .toFixed(2)
                                 .toString()
                                 .replace('.', ",")}`
   },
