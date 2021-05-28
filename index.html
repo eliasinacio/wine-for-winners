@@ -57,7 +57,7 @@
               <div class="card-body">
                 <h4 class="card-title">Quartz Rosé</h4>
                 <p>Sweet and strong flavor</p>
-                <button class="btn btn-dark" onclick="Modal.open()">Show me</button>
+                <button class="btn btn-dark" onclick="Modal.setValues(0); Modal.open()">Show me</button>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
               <div class="card-body">
                 <h4 class="card-title">Pure Galaxy</h4>
                 <p>The most pure and refined wine</p>
-                <button class="btn btn-dark" onclick="Modal.open()">Show me</button>
+                <button class="btn btn-dark" onclick="Modal.setValues(1); Modal.open()">Show me</button>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@
               <div class="card-body">
                 <h4 class="card-title">Black Mirror</h4>
                 <p>Strong and with a long lasting flavor</p>
-                <button class="btn btn-dark" onclick="Modal.open()">Show me</button>
+                <button class="btn btn-dark" onclick="Modal.setValues(2); Modal.open()">Show me</button>
               </div>
             </div>
           </div>
@@ -101,21 +101,21 @@
     <div id="modalContainer" class="bg-white border shadow-lg p-3 pt-3 rounded">
   
       <div id="title">  
-        <h2>Quartz Rosé</h2>
-        <small>Red fruits</small>
+        <h2></h2>
+        <small></small>
       </div>
   
       <div id="wineData">
         <table  style="width: 90%; margin: 5px auto 10px;" class="table">
           <tbody>
             <tr>
-              <th id="winery">Winery</th><td>Luigi Bosca</td>
+              <th>Winery</th><td id="winery"></td>
             </tr>
             <tr>
-              <th id="grapes">Grapes</th><td>Pinot Gris, Pinot Noir</td>
+              <th>Grapes</th><td id="grapes"></td>
             </tr>
             <tr>
-              <th id="harvest">Harvest</th><td>2012</td>
+              <th>Harvest</th><td id="harvest"></td>
             </tr>
           </tbody>
         </table>
@@ -125,10 +125,15 @@
           <div id="alcoholBar">
             <div id="alcoholField"></div>
           </div>
-          <span id="alcoholValue">23<span id="percent">%</span></span>
+          <span id="alcoholValue">23</span><span id="percent">%</span>
         </div>
+        <hr id="hr1">
+        <div id="priceField" class="d-flex">
+          <span id="us">US$</span><span id="price">30,89</span>
+        </div>
+        <hr id="hr2">
       </div>
-  
+
       <div id="buttons" class="d-flex justify-content-around">
         <button id="buyBtn" class="btn btn-dark rounded" disabled="true">Buy</button>
         <button id="cancelBtn" class="btn btn-dark rounded" onclick="Modal.close()">Cancel</button>
