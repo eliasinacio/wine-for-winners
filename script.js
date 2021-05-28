@@ -44,5 +44,3 @@ const Modal = {
     modal.hidden = true;
   }
 }
-
-Modal.open();
