@@ -78,6 +78,80 @@ video {
   margin-bottom: 40px;
 }
 
+/* ===== MODAL ===== */
+#modal {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #00000077;
+  font-family: 'Barlow', sans-serif;
+  
+  width: 100%;
+  height: 100%;
+  
+  z-index: -1;
+}
+
+#modalContainer {
+  width: 320px;
+  height: 400px;
+}
+
+#title h2 {
+  margin-bottom: -5px;
+}
+
+#title small {
+  margin-left: 5px;
+  opacity: 70%;
+}
+
+#alcoholTitle {
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+#alcoholContainer {
+  margin: -20px 20px 40px;
+  align-items: center;
+}
+
+#alcoholBar {
+  width: 180px;
+  height: 10px;
+
+  border-radius: 5px;
+
+  background-color: gray;
+}
+
+#alcoholField {
+  width: 30px;
+  height: 10px;
+
+  border-radius: 5px;
+
+  background-color: black;
+}
+
+#alcoholValue {
+  font-size: 2.2rem;
+  margin-left: 10px;
+}
+
+#percent {
+  font-size: 50%;
+}
+
+#buttons button {
+  width: 45%;
+  align-self: baseline;
+}
+
 /* ===== FOOTER ===== */
 #footer {
   margin-top: 60px;
