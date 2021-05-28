@@ -11,7 +11,6 @@ header {
 
 #icon-container {
   display: flex;
-  align-items: flex-end;
 }
 
 header h1 {
@@ -175,6 +174,7 @@ video {
 #buttons button {
   width: 45%;
   align-self: baseline;
+  margin-bottom: 5px;
 }
 
 /* ===== FOOTER ===== */
@@ -200,20 +200,18 @@ footer a img:hover {
 
 /* ===== RESPONSIVITY ===== */
 @media (max-width: 500px) { 
-  header {
+  #header-container {
+    padding: 0px;
     display: flex;
+    margin: 0;
     flex-direction: column;
-  }
-  
-  #icon-container {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-items: center;
   }
-  
-  header h1 {
-    margin: auto;
-    text-align: center;
+
+  #nav-bar {
+    margin: 0;
   }
   
   main {
