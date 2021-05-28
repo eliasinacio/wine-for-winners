@@ -70,6 +70,3 @@ const Modal = {
     modal.hidden = true;
   }
 }
-
-Modal.setValues(1)
-Modal.open()
